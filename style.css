@@ -1895,25 +1895,6 @@ article[id]{
   box-shadow: 0 4px 14px rgba(10, 102, 194, 0.22);
 }
 
-/* 3. WhatsApp */
-.contact-card-whatsapp:hover{
-  border-color: rgba(37, 211, 102, 0.55);
-  box-shadow: 0 16px 36px rgba(37, 211, 102, 0.18), 0 4px 10px rgba(10, 27, 56, 0.05);
-}
-.contact-card-whatsapp:hover .contact-card-value{
-  color: #128C7E;
-}
-.contact-card-whatsapp:hover .contact-card-arrow{
-  color: #128C7E;
-  transform: translateX(5px);
-}
-.contact-card-whatsapp:hover .contact-icon-whatsapp{
-  background: #DCFCE7;
-  border-color: rgba(37, 211, 102, 0.45);
-  transform: scale(1.08);
-  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.25);
-}
-
 /* 4. GitHub */
 .contact-card-github:hover{
   border-color: rgba(24, 23, 23, 0.45);
@@ -1933,14 +1914,6 @@ article[id]{
   box-shadow: 0 4px 14px rgba(24, 23, 23, 0.16);
 }
 
-/* 5. Location (Static Card) */
-.contact-card-location{
-  transition: border-color 0.25s ease, box-shadow 0.25s ease;
-}
-.contact-card-location:hover{
-  border-color: rgba(168, 23, 30, 0.3);
-  box-shadow: 0 10px 24px rgba(168, 23, 30, 0.08);
-}
 
 /* ===== Section Projects (Full 1-Page Viewport: 3 Top, 2 Bottom) ===== */
 #projects{
