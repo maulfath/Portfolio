@@ -1815,20 +1815,9 @@ article[id]{
   background: #EFF6FF;
   border: 1px solid #DBEAFE;
 }
-
-.contact-icon-whatsapp{
-  background: #F0FDF4;
-  border: 1px solid #DCFCE7;
-}
-
 .contact-icon-github{
   background: #F8FAFC;
   border: 1px solid #E2E8F0;
-}
-
-.contact-icon-location{
-  background: #FFF1F2;
-  border: 1px solid #FFE4E6;
 }
 
 /* Content Area */
