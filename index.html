@@ -32,7 +32,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800;900&family=Space+Grotesk:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=10">
+  <link rel="stylesheet" href="style.css?v=11">
 </head>
 
 <body>
@@ -233,20 +233,19 @@
           <p class="about-eyebrow">About Me</p>
           <h2 class="about-headline">Maulana Fatih Abiyyin</h2>
           <p class="about-bio">
-            Mathematics graduate (S.Mat) from Universitas Diponegoro (GPA 3.57/4.00) specializing in quantitative data analysis, business intelligence, and stochastic modeling. Equipped with hands-on experience from data analysis internships at PT Vinix Seven Aurum (MSIB) and Badan Pusat Statistik (BPS), I combine mathematical rigor with practical business problem-solving — turning raw data into clear stories, automated workflows, and interactive dashboards that empower teams to make confident, data-driven decisions.
+            Mathematics graduate (GPA 3.57/4.00) from Universitas Diponegoro specializing in business intelligence, time-series forecasting, and quantitative data modeling. Built a Banyumas CPI forecasting model at BPS with 0.25% MAPE (reduced to 0.16% via PID controller, published in <em>Contemporary Mathematics and Applications</em>) and transformed 9,994 retail transactions into interactive Power BI executive dashboards during an accredited MSIB internship rated <em>"Sangat Baik"</em>. Proficient in Python, SQL, and Power BI to solve real-world business challenges and deliver clear, actionable insights for decision-makers.
           </p>
           <div class="about-cta-row">
             <a href="#contact" class="about-btn-primary">Get in Touch</a>
             <a href="#experience" class="about-btn-ghost">See Experience →</a>
-            <!-- Ganti href="#" dengan link Google Drive CV Anda saat sudah siap -->
-            <a href="#" class="about-btn-cv" target="_blank" rel="noopener noreferrer" onclick="if(this.getAttribute('href')==='#'){ alert('CV sedang disiapkan di Google Drive. Segera hadir!'); return false; }" title="View Curriculum Vitae (Google Drive)">
+            <a href="https://drive.google.com/file/d/1bfAktb3Yp0RZsBa3mVW8iV-SjCksrjlB/view?usp=sharing" class="about-btn-cv" target="_blank" rel="noopener noreferrer" title="View Curriculum Vitae (PDF on Google Drive)">
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
                 <polyline points="14 2 14 8 20 8"></polyline>
                 <line x1="16" y1="13" x2="8" y2="13"></line>
                 <line x1="16" y1="17" x2="8" y2="17"></line>
               </svg>
-              View CV <span class="badge-cv-soon">Coming Soon</span>
+              View CV (PDF) &nearr;
             </a>
           </div>
         </div>
@@ -374,9 +373,8 @@
                     <span class="exp-pill-heading">Role Overview</span>
                     <div class="exp-box-content">
                       <ul>
-                        <li><strong>Performed Exploratory Data Analysis (EDA)</strong> on <strong>17,000+ records</strong> of bike-sharing usage patterns across seasonal and weather variables (2011–2012).</li>
-                        <li><strong>Remediated outliers &amp; processed datasets</strong> utilizing statistical feature scaling and automated data validation pipelines.</li>
-                        <li><strong>Monitored business performance metrics</strong> tracking sales velocity, <strong>17 product sub-categories</strong>, and regional demand trends.</li>
+                        <li><strong>Cut remaining outliers in casual rentals from 44 to 14</strong> across a 731-row daily bike-sharing dataset, by Winsorizing humidity and wind speed (15 outliers to 0) and applying a log transformation.</li>
+                        <li><strong>Identified a premium customer segment</strong> (20% of 200 customers, average income $86K, spending score 81.5) by running K-Means Clustering (k=5, silhouette 0.417), formulating actionable recommendations for exclusive promotional strategies.</li>
                       </ul>
                     </div>
                   </div>
@@ -385,9 +383,8 @@
                     <span class="exp-pill-heading">Key Contribution</span>
                     <div class="exp-box-content">
                       <ul>
-                        <li><strong>Engineered interactive Superstore Sales Dashboards</strong> in Looker Studio / Power BI visualizing <strong>$991K+ revenue</strong> and <strong>9,800+ transactions</strong>.</li>
-                        <li><strong>Architected relational database schemas &amp; SQL queries</strong> normalizing 4 core entities to accelerate analytical querying and reporting.</li>
-                        <li><strong>Delivered technical presentations &amp; business insights</strong> translating complex analytical findings into actionable management recommendations.</li>
+                        <li><strong>Engineered an interactive analytics dashboard</strong> in Looker Studio and Power BI visualizing <strong>$2.30M+ in revenue from 9,994 transactions</strong>, consolidating revenue, margin, and segment views for 17 product subcategories.</li>
+                        <li><strong>Designed and implemented a relational database architecture</strong> using MySQL for a library website application, managing complex data entities (book catalogs, users, and transactions) for seamless searchability.</li>
                       </ul>
                     </div>
                   </div>
@@ -396,9 +393,9 @@
                 <div class="exp-tools-container">
                   <span class="exp-pill-heading">Tools</span>
                   <div class="exp-tools-tags">
-                    <span>• Python</span>
-                    <span>• Looker Studio / Power BI</span>
-                    <span>• MySQL / Relational DB</span>
+                    <span>• Python (Pandas, NumPy)</span>
+                    <span>• Power BI &amp; Looker Studio</span>
+                    <span>• SQL (MySQL)</span>
                     <span>• Scikit-Learn</span>
                   </div>
                 </div>
@@ -457,7 +454,7 @@
                   <span class="exp-badge-pill">07/2024 - 08/2024</span>
                   <span class="exp-badge-pill">Banyumas, Indonesia</span>
                 </div>
-                <p class="exp-company-name">BPS-Statistics Indonesia (Badan Pusat Statistik)</p>
+                <p class="exp-company-name">BPS - Statistics Indonesia (Badan Pusat Statistik)</p>
               </div>
 
               <!-- Row 2, Col 1: Bullets & Tools -->
@@ -467,9 +464,8 @@
                     <span class="exp-pill-heading">Role Overview</span>
                     <div class="exp-box-content">
                       <ul>
-                        <li><strong>Validated &amp; cleaned</strong> official regional survey datasets covering thousands of economic indicators using Python and advanced Excel.</li>
-                        <li><strong>Processed multi-sector demographic &amp; price data</strong> to prepare the annual publication <em>"Kecamatan dalam Angka"</em> across municipal districts.</li>
-                        <li><strong>Designed publication layouts &amp; visual infographics</strong> communicating regional statistics to public stakeholders and policymakers.</li>
+                        <li><strong>Validated thousands of regional survey records</strong> using Python and Excel prior to official publication, ensuring zero discrepancies.</li>
+                        <li><strong>Completed regional data processing quotas</strong> across 31 administrative areas (27 sub-districts and 4 villages) 7 days early, by coordinating a team of 10 interns.</li>
                       </ul>
                     </div>
                   </div>
@@ -478,9 +474,8 @@
                     <span class="exp-pill-heading">Key Contribution</span>
                     <div class="exp-box-content">
                       <ul>
-                        <li><strong>Engineered Double Exponential Smoothing (DES) models</strong> in Python with automated grid search testing <strong>100+ &alpha; and &beta; parameter combinations</strong> to minimize forecast error.</li>
-                        <li><strong>Delivered official internship research seminar (Seminar PKL)</strong> forecasting Consumer Price Index (IHK) trends for Banyumas Regency.</li>
-                        <li><strong>Published official BPS statistical infographics</strong> delivering <strong>3 municipal publications</strong> with 100% data integrity and zero discrepancies.</li>
+                        <li><strong>Forecasted Banyumas CPI with 0.25% MAPE</strong> (pure DES) on a 1-month holdout (January 2025) using 68 historical monthly records, building a Double Exponential Smoothing model in Python with grid-search tuning of &alpha; and &beta;.</li>
+                        <li><strong>Delivered 5 publication layouts of <em>"Kecamatan dalam Angka"</em></strong> 7 days before deadline, by designing statistical infographics in Adobe InDesign.</li>
                       </ul>
                     </div>
                   </div>
@@ -1037,10 +1032,9 @@
               <div class="activity-pill-heading">Key Contribution</div>
               <div class="activity-box-content">
                 <ul>
-                  <li><strong>Spearheaded member capacity-building initiatives</strong> and skill workshops for Bank
-                    Indonesia scholarship recipients.</li>
-                  <li><strong>Co-executed community empowerment programs</strong> and youth development seminars in
-                    collaboration with institutional partners.</li>
+                  <li><strong>Designed &amp; executed 8 development programs</strong> to identify and foster the non-academic talents of 150 scholarship awardees.</li>
+                  <li><strong>Organized routine sports &amp; recreational initiatives</strong> open to all 150 awardees, engaging 30+ regular participants per session to foster teamwork.</li>
+                  <li><strong>Managed operational logistics for flagship events</strong>, including First Gathering and Upgrading, accommodating 150 attendees and 8 supervising lecturers.</li>
                 </ul>
               </div>
             </div>
@@ -1084,7 +1078,7 @@
 
           <!-- CARD 2: BNSP Professional Competency Certification -->
           <article class="activity-card activity-card-highlight">
-            <h3 class="activity-role-title">Certified Data &amp; Software Practitioner</h3>
+            <h3 class="activity-role-title">Competency Certification: Computer Operation</h3>
 
             <div class="activity-meta-banner">
               <div class="activity-meta-left">
@@ -1092,7 +1086,7 @@
                   <span class="activity-meta-date">10/2025 - 10/2028</span>
                   <span class="activity-meta-loc">National / Indonesia</span>
                 </div>
-                <span class="activity-meta-org">Badan Nasional Sertifikasi Profesi (BNSP RI)</span>
+                <span class="activity-meta-org">BNSP RI — No. 63122 3514.01 0000342 2025</span>
               </div>
               <div class="activity-org-logo-wrap" title="Badan Nasional Sertifikasi Profesi (BNSP RI)">
                 <img src="bnsp/logo-bnsp.png" alt="Logo BNSP" class="activity-org-logo">
@@ -1103,10 +1097,8 @@
               <div class="activity-pill-heading">Key Contribution</div>
               <div class="activity-box-content">
                 <ul>
-                  <li><strong>Validated national professional competence</strong> under SKKNI standards for computer
-                    software operations and quantitative data processing.</li>
-                  <li><strong>Certified technical proficiency</strong> in advanced spreadsheet calculation, database
-                    manipulation, and digital content governance.</li>
+                  <li><strong>Certified in website content management</strong> under the Computer Operation competency field.</li>
+                  <li><strong>Assessed against Indonesian National Work Competency Standards (SKKNI)</strong>, validating spreadsheet calculation, database manipulation, and digital content governance.</li>
                 </ul>
               </div>
             </div>
@@ -1146,7 +1138,7 @@
 
           <!-- CARD 3: Mathematics Student Association (HMM Undip) -->
           <article class="activity-card">
-            <h3 class="activity-role-title">Senior Staff of Human Resource Development</h3>
+            <h3 class="activity-role-title">Expert Staff of Student Resource Development (PSDM)</h3>
 
             <div class="activity-meta-banner">
               <div class="activity-meta-left">
@@ -1165,10 +1157,9 @@
               <div class="activity-pill-heading">Key Contribution</div>
               <div class="activity-box-content">
                 <ul>
-                  <li><strong>Awarded "Top Expert Staff" (Q3)</strong> in recognition of outstanding leadership and
-                    internal member development programs.</li>
-                  <li><strong>Mentoring Coordinator for SPEKTA MATH 2024</strong>, designing academic and peer-mentoring
-                    curriculums for 100+ freshman students.</li>
+                  <li><strong>Directed planning &amp; execution of "Pencerdasan Internal"</strong> (Internal Enlightenment) as Project Officer, securing 100% attendance from 45 association members.</li>
+                  <li><strong>Led mentor coordination for SPEKTA MATH 2024</strong>, structuring learning modules and directing facilitators to guide 180 freshmen students.</li>
+                  <li><strong>Awarded Top Expert Staff in Q3 2024</strong> for modernizing conventional program workflows and successfully delivering two core student development initiatives.</li>
                 </ul>
               </div>
             </div>
@@ -1280,7 +1271,7 @@
 
           <!-- CARD 5: Undip's Mathematics Competition (UMC) -->
           <article class="activity-card">
-            <h3 class="activity-role-title">Staff of Logistics &amp; Equipment</h3>
+            <h3 class="activity-role-title">Staff of Logistics and Equipment Division</h3>
 
             <div class="activity-meta-banner">
               <div class="activity-meta-left">
@@ -1299,10 +1290,9 @@
               <div class="activity-pill-heading">Key Contribution</div>
               <div class="activity-box-content">
                 <ul>
-                  <li><strong>Managed inventory &amp; venue logistics</strong> for a national math competition spanning
-                    primary to senior high schools across Indonesia.</li>
-                  <li><strong>Coordinated on-site operational equipment distribution</strong> across multiple regional
-                    testing centers, ensuring flawless event execution.</li>
+                  <li><strong>Allocated logistical resources and technical equipment</strong> for a national competition engaging <strong>980 participants</strong> across elementary, middle, and high school levels.</li>
+                  <li><strong>Managed spatial setup &amp; crowd mobilization</strong> across 10 examination rooms, a main auditorium, vendor areas, and public facilities on strict operational schedules.</li>
+                  <li><strong>Monitored 100+ inventory assets</strong> and resolved on-site logistical issues in real time throughout event days.</li>
                 </ul>
               </div>
             </div>
@@ -1312,8 +1302,8 @@
               <div class="activity-skills-pills">
                 <span class="activity-skill-pill">Logistics Operations</span>
                 <span class="activity-skill-pill">Resource Planning</span>
-                <span class="activity-skill-pill">Cross-team Synergy</span>
-                <span class="activity-skill-pill">Operations</span>
+                <span class="activity-skill-pill">Crowd Mobilization</span>
+                <span class="activity-skill-pill">Inventory Control</span>
               </div>
             </div>
 
@@ -1351,10 +1341,10 @@
             <div class="activity-meta-banner">
               <div class="activity-meta-left">
                 <div class="activity-meta-pills">
-                  <span class="activity-meta-date">20-21 Mei 2023</span>
+                  <span class="activity-meta-date">May 2023</span>
                   <span class="activity-meta-loc">Semarang, Indonesia</span>
                 </div>
-                <span class="activity-meta-org">Diponegoro University</span>
+                <span class="activity-meta-org">Universitas Diponegoro</span>
               </div>
               <div class="activity-org-logo-wrap" title="Universitas Diponegoro">
                 <img src="foto isian Workshop/logo-undip.png" alt="Logo Universitas Diponegoro"
@@ -1366,10 +1356,8 @@
               <div class="activity-pill-heading">Key Contribution</div>
               <div class="activity-box-content">
                 <ul>
-                  <li><strong>Studied end-to-end data analytics lifecycles</strong>, feature inspection techniques, and
-                    statistical distribution modeling.</li>
-                  <li><strong>Engineered Exploratory Data Analysis (EDA) pipelines</strong> utilizing Python, Pandas,
-                    and structured Excel workflows.</li>
+                  <li><strong>Hands-on training in the end-to-end data processing cycle</strong>, using Pandas and NumPy for data manipulation and visualization.</li>
+                  <li><strong>Applied introductory machine learning algorithms and EDA techniques</strong> to find actionable patterns in structured datasets.</li>
                 </ul>
               </div>
             </div>
@@ -1474,6 +1462,14 @@
                     </svg>
                     <span class="comp-tool-label">MySQL</span>
                   </div>
+                  <!-- SPSS -->
+                  <div class="comp-tool-item" title="IBM SPSS Statistics">
+                    <svg class="comp-logo-img" viewBox="0 0 36 36" width="26" height="26" aria-label="IBM SPSS">
+                      <rect width="36" height="36" rx="6" fill="#052FAD" />
+                      <text x="18" y="23" font-family="'Segoe UI', Arial, sans-serif" font-weight="900" font-size="11.5" fill="#FFFFFF" text-anchor="middle" letter-spacing="-0.5">SPSS</text>
+                    </svg>
+                    <span class="comp-tool-label">SPSS</span>
+                  </div>
                 </div>
               </div>
 
@@ -1554,13 +1550,49 @@
                     </svg>
                     <span class="comp-tool-label">Looker Studio</span>
                   </div>
+                  <!-- Tableau -->
+                  <div class="comp-tool-item" title="Tableau">
+                    <svg class="comp-logo-img" viewBox="0 0 36 36" width="26" height="26" aria-label="Tableau">
+                      <rect x="16.5" y="3" width="3" height="7" fill="#EB6A2A" rx="1"/>
+                      <rect x="16.5" y="26" width="3" height="7" fill="#EB6A2A" rx="1"/>
+                      <rect x="3" y="16.5" width="7" height="3" fill="#EB6A2A" rx="1"/>
+                      <rect x="26" y="16.5" width="7" height="3" fill="#EB6A2A" rx="1"/>
+                      <rect x="15.5" y="11" width="5" height="14" fill="#2B5B84" rx="1"/>
+                      <rect x="11" y="15.5" width="14" height="5" fill="#2B5B84" rx="1"/>
+                      <rect x="7" y="7" width="3.5" height="5.5" fill="#7C9D96" rx="0.8"/>
+                      <rect x="25.5" y="7" width="3.5" height="5.5" fill="#C43D44" rx="0.8"/>
+                      <rect x="7" y="23.5" width="3.5" height="5.5" fill="#D69A2D" rx="0.8"/>
+                      <rect x="25.5" y="23.5" width="3.5" height="5.5" fill="#5C88BF" rx="0.8"/>
+                    </svg>
+                    <span class="comp-tool-label">Tableau</span>
+                  </div>
                 </div>
               </div>
 
-              <!-- Design -->
+              <!-- Design & Publishing -->
               <div class="comp-tool-group">
-                <h4 class="comp-tool-title">Design</h4>
+                <h4 class="comp-tool-title">Design &amp; Publishing</h4>
                 <div class="comp-tool-logos">
+                  <!-- InDesign -->
+                  <div class="comp-tool-item" title="Adobe InDesign">
+                    <svg class="comp-logo-img" viewBox="0 0 36 36" width="26" height="26" aria-label="Adobe InDesign">
+                      <rect width="36" height="36" rx="7" fill="#49021F" />
+                      <text x="18" y="24" font-family="'Segoe UI', Arial, sans-serif" font-weight="900" font-size="16" fill="#FF3366" text-anchor="middle">Id</text>
+                    </svg>
+                    <span class="comp-tool-label">InDesign</span>
+                  </div>
+                  <!-- Figma -->
+                  <div class="comp-tool-item" title="Figma">
+                    <svg class="comp-logo-img" viewBox="0 0 24 36" width="18" height="26" aria-label="Figma">
+                      <path d="M6 0H12V12H6C2.69 12 0 9.31 0 6C0 2.69 2.69 0 6 0Z" fill="#F24E1E" />
+                      <path d="M12 0H18C21.31 0 24 2.69 24 6C24 9.31 21.31 12 18 12H12V0Z" fill="#FF7262" />
+                      <path d="M6 12H12V24H6C2.69 24 0 21.31 0 18C0 14.69 2.69 12 6 12Z" fill="#A259FF" />
+                      <circle cx="18" cy="18" r="6" fill="#1ABCFE" />
+                      <path d="M6 24H12V30C12 33.31 9.31 36 6 36C2.69 36 0 33.31 0 30C0 26.69 2.69 24 6 24Z"
+                        fill="#0ACF83" />
+                    </svg>
+                    <span class="comp-tool-label">Figma</span>
+                  </div>
                   <!-- Canva -->
                   <div class="comp-tool-item" title="Canva">
                     <svg class="comp-logo-img" viewBox="0 0 36 36" width="26" height="26" aria-label="Canva">
@@ -1578,18 +1610,6 @@
                         font-style="italic">Canva</text>
                     </svg>
                     <span class="comp-tool-label">Canva</span>
-                  </div>
-                  <!-- Figma -->
-                  <div class="comp-tool-item" title="Figma">
-                    <svg class="comp-logo-img" viewBox="0 0 24 36" width="18" height="26" aria-label="Figma">
-                      <path d="M6 0H12V12H6C2.69 12 0 9.31 0 6C0 2.69 2.69 0 6 0Z" fill="#F24E1E" />
-                      <path d="M12 0H18C21.31 0 24 2.69 24 6C24 9.31 21.31 12 18 12H12V0Z" fill="#FF7262" />
-                      <path d="M6 12H12V24H6C2.69 24 0 21.31 0 18C0 14.69 2.69 12 6 12Z" fill="#A259FF" />
-                      <circle cx="18" cy="18" r="6" fill="#1ABCFE" />
-                      <path d="M6 24H12V30C12 33.31 9.31 36 6 36C2.69 36 0 33.31 0 30C0 26.69 2.69 24 6 24Z"
-                        fill="#0ACF83" />
-                    </svg>
-                    <span class="comp-tool-label">Figma</span>
                   </div>
                 </div>
               </div>
@@ -1619,15 +1639,15 @@
               </div>
 
               <div class="comp-badges-wrap">
-                <span class="comp-badge comp-badge-red">Data Analysis</span>
-                <span class="comp-badge comp-badge-yellow">Data Visualization</span>
-                <span class="comp-badge comp-badge-red">Data Management</span>
-                <span class="comp-badge comp-badge-yellow">Data Entry</span>
-                <span class="comp-badge comp-badge-red">Business Analysis</span>
-                <span class="comp-badge comp-badge-yellow">Time Series Analysis</span>
-                <span class="comp-badge comp-badge-red">Dashboard</span>
-                <span class="comp-badge comp-badge-yellow">Economic Analysis</span>
-                <span class="comp-badge comp-badge-red">Graphic Design</span>
+                <span class="comp-badge comp-badge-red">Time-Series Forecasting</span>
+                <span class="comp-badge comp-badge-yellow">Exploratory Data Analysis (EDA)</span>
+                <span class="comp-badge comp-badge-red">Statistical Testing &amp; Regression</span>
+                <span class="comp-badge comp-badge-yellow">Outlier Treatment &amp; Cleaning</span>
+                <span class="comp-badge comp-badge-red">K-Means Clustering</span>
+                <span class="comp-badge comp-badge-yellow">BI &amp; KPI Dashboards</span>
+                <span class="comp-badge comp-badge-red">Database Architecture (SQL)</span>
+                <span class="comp-badge comp-badge-yellow">Stochastic Modeling</span>
+                <span class="comp-badge comp-badge-red">Business Intelligence</span>
               </div>
             </div>
 
