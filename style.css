@@ -500,188 +500,71 @@ article[id]{
 .about-section{
   background: linear-gradient(135deg, #A8171E 0%, #941319 60%, #7E0F15 100%);
   color: #FFFFFF;
-  padding: clamp(3.5rem, 6.5vw, 5.5rem) clamp(1.25rem, 4vw, 3rem);
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  padding: clamp(4.5rem, 8vh, 7rem) clamp(1.25rem, 4vw, 3rem);
   position: relative;
   overflow: hidden;
   border-bottom: 3px solid var(--navy);
-  box-shadow: inset 0 6px 20px rgba(0,0,0,0.15);
+  box-sizing: border-box;
 }
 
 .about-container{
   max-width: var(--max-w);
+  width: 100%;
   margin: 0 auto;
   position: relative;
   z-index: 2;
 }
 
+/* Single column layout */
+.about-single{
+  width: 100%;
+  max-width: 100%;
+}
+
+.about-eyebrow{
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.6);
+  margin: 0 0 1rem 0;
+}
+
 .about-headline{
   font-family: var(--font-display);
-  font-size: clamp(2.2rem, 4vw, 3.2rem);
-  font-weight: 800;
+  font-size: clamp(2.8rem, 5.5vw, 4.4rem);
+  font-weight: 900;
   color: #FFFFFF;
-  text-align: left;
-  margin: 0 0 1.5rem 0;
-  line-height: 1.15;
-  letter-spacing: -0.015em;
-  text-shadow: 0 3px 12px rgba(0,0,0,0.25);
+  margin: 0 0 1.75rem 0;
+  line-height: 1.06;
+  letter-spacing: -0.025em;
 }
 
-.about-name-underlined{
-  text-decoration: underline;
-  text-decoration-color: #FFFFFF;
-  text-decoration-thickness: 3.5px;
-  text-underline-offset: 7px;
-}
-
-.about-grid{
-  display: grid;
-  grid-template-columns: 0.85fr 1.15fr;
-  gap: clamp(2rem, 5vw, 4.5rem);
-  align-items: flex-start;
-}
-
-/* Left Visual / Portrait Photo */
-.about-visual{
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  position: relative;
-  margin-top: 0.25rem;
-}
-
-.about-photo-wrapper{
-  position: relative;
+.about-bio{
   width: 100%;
-  max-width: 360px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  max-width: 100%;
+  font-size: clamp(1rem, 1.3vw, 1.125rem);
+  line-height: 1.85;
+  font-weight: 400;
+  color: rgba(255,255,255,0.85);
+  margin: 0 0 2.25rem 0;
 }
 
-.about-backdrop-shape{
-  position: absolute;
-  top: 10%;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 90%;
-  background: #540D14;
-  border-radius: 180px 180px 24px 24px;
-  z-index: 0;
-  box-shadow: inset 0 8px 24px rgba(0,0,0,0.3);
-}
-
-.about-photo{
-  position: relative;
-  z-index: 1;
-  width: 100%;
-  max-height: 480px;
-  object-fit: cover;
-  object-position: center top;
-  display: block;
-  border-radius: 160px 160px 24px 24px;
-  filter: drop-shadow(0 14px 28px rgba(0,0,0,0.35));
-}
-
-/* Right Content */
-.about-details{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-.about-bio-block{
-  border-left: 4px solid var(--navy);
-  padding-left: 1.25rem;
-  margin-bottom: 2rem;
-}
-
-.about-bio-block p{
-  font-size: clamp(0.95rem, 1.35vw, 1.05rem);
-  line-height: 1.7;
-  color: rgba(255, 255, 255, 0.94);
-  margin: 0;
-  text-align: justify;
-}
-
-.about-bio-block p strong{
-  color: #FFFFFF;
-  font-weight: 700;
-}
-
-/* University & GPA Card */
-.about-education-card{
+.about-cta-row{
   display: flex;
   align-items: center;
-  gap: 1.25rem;
-  margin-bottom: 2rem;
-  padding: 1rem 1.25rem;
-  background: rgba(0, 0, 0, 0.15);
-  border-radius: 8px;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
-.about-univ-icon{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-
-.undip-logo-img,
-.undip-emblem{
-  width: clamp(58px, 6vw, 72px);
-  height: clamp(58px, 6vw, 72px);
-  object-fit: contain;
-  flex-shrink: 0;
-  filter: drop-shadow(0 4px 10px rgba(0,0,0,0.3));
-}
-
-.about-univ-title{
-  font-family: var(--font-display);
-  font-size: clamp(1rem, 1.6vw, 1.18rem);
-  font-weight: 800;
-  color: #FFFFFF;
-  letter-spacing: 0.04em;
-  margin: 0;
-  text-transform: uppercase;
-}
-
-.about-univ-year{
-  font-size: 0.85rem;
-  font-weight: 500;
-  opacity: 0.85;
-  letter-spacing: 0;
-}
-
-.about-degree-name{
-  font-size: 0.92rem;
-  color: rgba(255, 255, 255, 0.92);
-  margin: 3px 0 5px 0;
-  font-weight: 500;
-}
-
-.about-gpa-badge{
-  font-family: var(--font-display);
-  font-size: clamp(1.2rem, 2vw, 1.55rem);
-  font-weight: 800;
-  color: #FFD166;
-  margin: 0;
-  letter-spacing: 0.02em;
-  text-shadow: 0 2px 6px rgba(0,0,0,0.2);
-}
-
-/* Download CV Button in About Section */
-.about-action{
-  margin-top: 0.25rem;
-}
-
-.btn-cv-about{
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.75rem 1.4rem;
+.about-btn-primary{
+  display: inline-block;
+  padding: 0.72rem 1.5rem;
   background: #FFFFFF;
   color: var(--crimson);
   font-family: var(--font-body);
@@ -689,17 +572,30 @@ article[id]{
   font-weight: 700;
   border-radius: 6px;
   text-decoration: none;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
-  border: 1.5px solid rgba(255, 255, 255, 0.5);
-  transition: transform 0.15s ease, background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+  transition: background 0.18s ease, color 0.18s ease, transform 0.15s ease;
 }
 
-.btn-cv-about:hover{
+.about-btn-primary:hover{
   background: var(--navy);
   color: #FFFFFF;
-  border-color: var(--navy);
   transform: translateY(-2px);
-  box-shadow: 0 8px 22px rgba(10, 27, 56, 0.35);
+}
+
+.about-btn-ghost{
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.75);
+  text-decoration: none;
+  border-bottom: 1.5px solid rgba(255,255,255,0.3);
+  padding-bottom: 2px;
+  transition: color 0.18s ease, border-color 0.18s ease;
+}
+
+.about-btn-ghost:hover{
+  color: #FFFFFF;
+  border-color: #FFFFFF;
 }
 
 /* ===== Reusable Alternating Section Backgrounds ===== */
@@ -783,26 +679,6 @@ article[id]{
   column-gap: clamp(1rem, 2vw, 1.5rem);
   row-gap: 0.65rem;
   align-items: stretch;
-}
-
-@media (max-width: 900px){
-  .exp-card-inner{
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
-    row-gap: 1.25rem;
-  }
-  .exp-header-info{
-    grid-column: 1 / -1;
-    grid-row: 1 / 2;
-  }
-  .exp-details-col{
-    grid-column: 1 / -1;
-    grid-row: 2 / 3;
-  }
-  .exp-visual-col{
-    grid-column: 1 / -1;
-    grid-row: 3 / 4;
-  }
 }
 
 /* Row 1, Col 1: Header Info */
@@ -1054,6 +930,7 @@ article[id]{
   display: flex;
   flex-direction: column;
   width: 100%;
+  min-width: 0;
 }
 
 .exp-showcase-tab{
@@ -1146,6 +1023,7 @@ article[id]{
   display: flex;
   flex-direction: column;
   gap: 0.45rem;
+  min-width: 0;
 }
 
 .exp-media-bps-half{
@@ -1161,6 +1039,60 @@ article[id]{
   height: 100%;
   object-fit: cover;
   object-position: top center;
+}
+
+/* Experience Cards Responsive Layout (Fixed Mobile Stacking) */
+@media (max-width: 900px){
+  .exp-card-inner{
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1.25rem !important;
+  }
+  .exp-header-info{
+    grid-column: auto !important;
+    grid-row: auto !important;
+    width: 100% !important;
+  }
+  .exp-details-col{
+    grid-column: auto !important;
+    grid-row: auto !important;
+    width: 100% !important;
+    justify-content: flex-start;
+  }
+  .exp-visual-col{
+    grid-column: auto !important;
+    grid-row: auto !important;
+    width: 100% !important;
+    margin-top: 0.25rem;
+  }
+  .exp-media-featured{
+    height: clamp(140px, 42vw, 195px);
+  }
+  .exp-media-half{
+    height: clamp(95px, 26vw, 120px);
+  }
+}
+
+@media (max-width: 540px){
+  .exp-showcase-box{
+    padding: 0.55rem 0.55rem;
+  }
+  .exp-showcase-tab{
+    font-size: 0.68rem;
+    padding: 0.2rem 0.4rem;
+  }
+  .exp-media-featured{
+    height: clamp(145px, 48vw, 190px);
+  }
+  .exp-media-half{
+    height: clamp(90px, 28vw, 115px);
+  }
+  .exp-media-bps-half{
+    height: clamp(92px, 28vw, 110px);
+  }
+  .exp-showcase-media-tall{
+    height: calc(2 * clamp(92px, 28vw, 110px) + 0.45rem + 1.35rem);
+  }
 }
 
 /* ===== Organizations & Certifications (2-Column Slide-Inspired Layout) ===== */
@@ -2498,33 +2430,9 @@ article[id]{
     justify-content: center;
   }
   
-  .about-grid{
+  .about-split{
     grid-template-columns: 1fr;
     gap: 2.5rem;
-  }
-  .about-headline{
-    text-align: center;
-  }
-  .about-details{
-    align-items: center;
-    text-align: center;
-  }
-  .about-bio-block{
-    border-left: none;
-    border-top: 3px solid var(--navy);
-    padding-left: 0;
-    padding-top: 1.25rem;
-  }
-  .about-bio-block p{
-    text-align: center;
-  }
-  .about-education-card{
-    width: 100%;
-    justify-content: center;
-    text-align: left;
-  }
-  .about-cv-card{
-    align-items: center;
   }
   
   .exp-card-grid{
@@ -2562,17 +2470,15 @@ article[id]{
   .hero-univ-text{ font-size: clamp(0.82rem, 3.8vw, 1rem); }
   .hero-ticker-inner{ font-size: 0.68rem; gap: 0.5rem 0.8rem; }
   
-  .about-education-card{
-    flex-direction: column;
-    text-align: center;
-    gap: 0.75rem;
+  .about-skills-row span{
+    font-size: 0.75rem;
   }
 
   .exp-card{
-    padding: 1.25rem;
+    padding: 0 0 1.25rem 0;
   }
   .exp-box-content{
-    padding: 1rem;
+    padding: 0.65rem 0.85rem;
   }
 
   .contact-cards-grid{
