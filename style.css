@@ -1080,6 +1080,98 @@ article[id]{
   object-position: top center;
 }
 
+/* TA Showcase: Metric Grid + Code Terminal */
+.exp-ta-showcase {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.exp-ta-stat-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.45rem;
+}
+
+.exp-ta-stat-card {
+  background: rgba(10, 27, 56, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 6px;
+  padding: 0.45rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.exp-ta-stat-num {
+  font-family: var(--font-display);
+  font-size: 1.12rem;
+  font-weight: 800;
+  color: #F9B818;
+  line-height: 1.1;
+}
+
+.exp-ta-stat-label {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.85);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-top: 0.15rem;
+}
+
+.exp-ta-code-box {
+  background: #060F1F;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.exp-ta-code-bar {
+  background: #0A1B38;
+  padding: 0.22rem 0.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.exp-ta-code-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dot-red { background: #FF5F56; }
+.dot-yellow { background: #FFBD2E; }
+.dot-green { background: #27C93F; }
+
+.exp-ta-code-title {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: rgba(255, 255, 255, 0.75);
+  margin-left: 0.25rem;
+}
+
+.exp-ta-code-pre {
+  margin: 0;
+  padding: 0.45rem 0.6rem;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  line-height: 1.45;
+  color: #E2E8F0;
+  overflow-x: auto;
+}
+
+.tk-kw { color: #F43F5E; font-weight: 600; }
+.tk-fn { color: #38BDF8; font-weight: 600; }
+.tk-str { color: #34D399; }
+
 /* Experience Cards Responsive Layout (Fixed Mobile Stacking) */
 @media (max-width: 900px){
   .exp-card-inner{
