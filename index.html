@@ -32,7 +32,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800;900&family=Space+Grotesk:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=11">
+  <link rel="stylesheet" href="style.css?v=12">
 </head>
 
 <body>
@@ -44,6 +44,7 @@
     <nav class="site-nav" aria-label="Main navigation">
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
       <a href="#projects">Projects</a>
       <a href="#publications">Publications &amp; IP</a>
       <a href="#organizations">Organizations</a>
@@ -193,9 +194,11 @@
         <div class="hero-ticker-inner">
           <span>DATA ANALYST</span>
           <span class="ticker-divider">|</span>
-          <span>DATA VISUALIZATION</span>
+          <span>TIME-SERIES FORECASTING</span>
           <span class="ticker-divider">|</span>
-          <span>DATA MANAGEMENT</span>
+          <span>SQL (MYSQL &amp; BIGQUERY)</span>
+          <span class="ticker-divider">|</span>
+          <span>DASHBOARDING &amp; BI</span>
           <span class="ticker-divider">|</span>
           <span>BUSINESS INTELLIGENCE</span>
           <span class="ticker-divider">|</span>
@@ -211,19 +214,27 @@
           <p class="about-eyebrow">About Me</p>
           <h2 class="about-headline">Maulana Fatih Abiyyin</h2>
           <p class="about-bio">
-            Mathematics graduate (GPA 3.57, Universitas Diponegoro) with 7 months of hands-on data work across two internships. Built an interactive Looker Studio and Power BI dashboard over 9,994 transactions and $2.30M+ in revenue, cut Banyumas CPI forecast error from 0.25% to 0.16% MAPE in a published peer-reviewed article (<em>Contemporary Mathematics and Applications</em>), and segmented 200 customers with K-Means to target the highest-value group. Proficient in Advanced Excel, SQL (MySQL), and Python, with a proven ability to explain the numbers behind statistical models to non-technical teams.
+            Mathematics graduate (B.Sc., GPA 3.57, Universitas Diponegoro) with 7 months of hands-on data experience across two internships. Built Looker Studio and Power BI dashboards covering 9,994 transactions and USD 2.3M+ in revenue, reduced Banyumas CPI forecasting error from 0.25% to 0.16% MAPE in a published journal article (<em>Contemporary Mathematics and Applications</em>), and segmented 200 customers with K-Means to target the highest-value group. Works with Excel, SQL (MySQL), and Python, and explains numbers clearly to non-technical teams.
           </p>
           <div class="about-cta-row">
             <a href="#contact" class="about-btn-primary">Get in Touch</a>
             <a href="#experience" class="about-btn-ghost">See Experience →</a>
-            <a href="https://drive.google.com/file/d/1bfAktb3Yp0RZsBa3mVW8iV-SjCksrjlB/view?usp=sharing" class="about-btn-cv" target="_blank" rel="noopener noreferrer" title="View Curriculum Vitae (PDF on Google Drive)">
+            <a href="CV_Maulana_Fatih_Abiyyin.pdf" class="about-btn-cv" target="_blank" rel="noopener noreferrer" title="View Curriculum Vitae (PDF)">
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
                 <polyline points="14 2 14 8 20 8"></polyline>
                 <line x1="16" y1="13" x2="8" y2="13"></line>
                 <line x1="16" y1="17" x2="8" y2="17"></line>
               </svg>
-              View CV (Google Drive) &nearr;
+              View CV (PDF) &nearr;
+            </a>
+            <a href="CV_Maulana_Fatih_Abiyyin.pdf" download="CV_Maulana_Fatih_Abiyyin.pdf" class="about-btn-cv about-btn-download" title="Download Curriculum Vitae (PDF)">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              Download CV
             </a>
           </div>
         </div>
@@ -351,8 +362,8 @@
                     <span class="exp-pill-heading">Role Overview</span>
                     <div class="exp-box-content">
                       <ul>
-                        <li><strong>Cut outliers in casual rentals from 44 to 14</strong> on a 731-row daily bike-sharing dataset, by applying 5% Winsorizing (humidity and wind speed outliers 15 to 0) and a log transformation in Python.</li>
-                        <li><strong>Pinpointed a high-value segment</strong> (20% of 200 customers, $86K average income, spending score 81.5) and an under-engaged high-income segment (19.5%, spending score 19.4), by running K-Means (k=5, silhouette 0.417) on age, income, and spending score.</li>
+                        <li><strong>Reduced casual rental outliers from 44 to 14</strong> in a 731-row daily bike rental dataset, using 5% Winsorizing (humidity and wind speed outliers from 15 to 0) and log transformation in Python.</li>
+                        <li><strong>Identified a high-value segment</strong> (20% of 200 customers, average income USD 86K, spending score 81.5) and an under-engaged high-income segment (19.5%, spending score 19.4), using K-Means (k=5, silhouette 0.417) on age, income, and spending score.</li>
                       </ul>
                     </div>
                   </div>
@@ -361,8 +372,8 @@
                     <span class="exp-pill-heading">Key Contribution</span>
                     <div class="exp-box-content">
                       <ul>
-                        <li><strong>Gave stakeholders one dashboard covering $2.30M+ in revenue</strong>, margin, and segments across 17 product subcategories and 9,994 transactions, by building it in Looker Studio and Power BI.</li>
-                        <li><strong>Structured a library website's data</strong> (500+ records across book catalogs, users, and transactions) into related tables, by designing the MySQL schema and writing 50+ queries.</li>
+                        <li><strong>Delivered a single stakeholder dashboard covering USD 2.3M+ in revenue</strong>, margin, and segments across 17 product subcategories and 9,994 transactions, built in Looker Studio and Power BI.</li>
+                        <li><strong>Structured library website data</strong> (500+ records of book catalog, users, and transactions) into relational tables, by designing a MySQL schema and writing 50+ queries.</li>
                       </ul>
                     </div>
                   </div>
@@ -427,7 +438,7 @@
             <div class="exp-card-inner">
               <!-- Row 1, Col 1: Role Header Info with Navy Divider -->
               <div class="exp-header-info">
-                <h3 class="exp-role-title">Algorithm and Programming Teaching Assistant</h3>
+                <h3 class="exp-role-title">Teaching Assistant, Algorithms and Programming</h3>
                 <div class="exp-meta-badges">
                   <span class="exp-badge-pill">10/2024 - 12/2024</span>
                   <span class="exp-badge-pill">Semarang, Indonesia</span>
@@ -442,8 +453,8 @@
                     <span class="exp-pill-heading">Role Overview</span>
                     <div class="exp-box-content">
                       <ul>
-                        <li><strong>Raised the average lab score of 50+ students from 70 to 80</strong>, by running weekly Python coding sessions and debugging their code live.</li>
-                        <li><strong>Produced 4 exam problem sets with 10 test cases each</strong>, validating computational logic, data structures, and algorithmic implementation.</li>
+                        <li><strong>Raised the average lab score of 50+ students from 70 to 80</strong>, through weekly Python coding sessions and live debugging.</li>
+                        <li><strong>Prepared 4 exam sets, each with 10 test cases</strong>, validating computational logic, algorithmic structures, and test evaluation.</li>
                       </ul>
                     </div>
                   </div>
@@ -452,8 +463,8 @@
                     <span class="exp-pill-heading">Key Contribution</span>
                     <div class="exp-box-content">
                       <ul>
-                        <li><strong>Cut grading time for 150 assignments by 60%</strong>, by writing automated test cases in Python to run program evaluations.</li>
-                        <li><strong>Mentored students through algorithmic problem sets</strong> and real-time live debugging sessions, strengthening code reliability.</li>
+                        <li><strong>Cut grading time for 150 assignments by 60%</strong>, by writing automated test cases to run the evaluations.</li>
+                        <li><strong>Mentored students through algorithmic problem sets</strong> and real-time live debugging sessions, strengthening programming problem-solving skills.</li>
                       </ul>
                     </div>
                   </div>
@@ -531,8 +542,8 @@
                     <span class="exp-pill-heading">Role Overview</span>
                     <div class="exp-box-content">
                       <ul>
-                        <li><strong>Validated regional survey data for 31 administrative areas</strong> before official publication, by running Python and Excel validation.</li>
-                        <li><strong>Finished data processing for 31 administrative areas</strong> (27 sub-districts, 4 villages) 7 days early, by coordinating a team of 10 interns.</li>
+                        <li><strong>Validated regional survey data for 31 administrative areas</strong> before official publication, using Python and Excel validation.</li>
+                        <li><strong>Finished data processing for 31 administrative areas</strong> (27 districts, 4 villages) 7 days early, by coordinating 10 fellow interns.</li>
                       </ul>
                     </div>
                   </div>
@@ -541,8 +552,8 @@
                     <span class="exp-pill-heading">Key Contribution</span>
                     <div class="exp-box-content">
                       <ul>
-                        <li><strong>Reached 0.25% MAPE on a 1-month holdout (January 2025) forecasting Banyumas CPI</strong>, by building a Double Exponential Smoothing model in Python on 68 monthly records with grid-search tuning of alpha and beta.</li>
-                        <li><strong>Delivered 5 layouts of <em>"Kecamatan dalam Angka"</em></strong> 7 days before deadline, by designing the infographics in Adobe InDesign.</li>
+                        <li><strong>Extended the internship data into a field work practice (PKL) research project</strong>, presented in April 2025: built a Double Exponential Smoothing model in Python on 68 monthly Banyumas CPI observations with grid search for alpha and beta, achieving 0.25% MAPE on a 1-month holdout (January 2025).</li>
+                        <li><strong>Completed 5 <em>"Kecamatan dalam Angka"</em> (Districts in Figures) layouts</strong> 7 days ahead of the deadline, by designing infographics in Adobe InDesign.</li>
                       </ul>
                     </div>
                   </div>
@@ -610,6 +621,219 @@
             </div>
           </article>
 
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section section-white-watermark" id="education">
+      <!-- Watermark Background Graphic Matching Hero -->
+      <div class="section-chart-bg" aria-hidden="true">
+        <svg viewBox="0 0 1200 500" preserveAspectRatio="none">
+          <defs>
+            <linearGradient id="pRedEdu" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#DE6B6B" stop-opacity="0.34" />
+              <stop offset="100%" stop-color="#DE6B6B" stop-opacity="0.04" />
+            </linearGradient>
+            <linearGradient id="pOrangeEdu" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#F8C69D" stop-opacity="0.36" />
+              <stop offset="100%" stop-color="#F8C69D" stop-opacity="0.04" />
+            </linearGradient>
+            <linearGradient id="pBlueEdu" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#8ECAE6" stop-opacity="0.34" />
+              <stop offset="100%" stop-color="#8ECAE6" stop-opacity="0.04" />
+            </linearGradient>
+            <linearGradient id="pGreenEdu" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#A7D7C5" stop-opacity="0.34" />
+              <stop offset="100%" stop-color="#A7D7C5" stop-opacity="0.04" />
+            </linearGradient>
+            <linearGradient id="pYellowEdu" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#FCE794" stop-opacity="0.36" />
+              <stop offset="100%" stop-color="#FCE794" stop-opacity="0.04" />
+            </linearGradient>
+          </defs>
+          <line x1="0" y1="80" x2="1200" y2="80" stroke="#0a1b38" stroke-opacity="0.045" stroke-dasharray="3 4" />
+          <line x1="0" y1="160" x2="1200" y2="160" stroke="#0a1b38" stroke-opacity="0.045" stroke-dasharray="3 4" />
+          <line x1="0" y1="240" x2="1200" y2="240" stroke="#0a1b38" stroke-opacity="0.045" stroke-dasharray="3 4" />
+          <line x1="0" y1="320" x2="1200" y2="320" stroke="#0a1b38" stroke-opacity="0.045" stroke-dasharray="3 4" />
+          <line x1="0" y1="400" x2="1200" y2="400" stroke="#0a1b38" stroke-opacity="0.045" stroke-dasharray="3 4" />
+
+          <rect x="20" y="240" width="16" height="260" rx="3" fill="url(#pOrangeEdu)" />
+          <rect x="42" y="160" width="16" height="340" rx="3" fill="url(#pRedEdu)" />
+          <rect x="64" y="290" width="16" height="210" rx="3" fill="url(#pBlueEdu)" />
+
+          <rect x="105" y="210" width="16" height="290" rx="3" fill="url(#pYellowEdu)" />
+          <rect x="127" y="130" width="16" height="370" rx="3" fill="url(#pRedEdu)" />
+          <rect x="149" y="270" width="16" height="230" rx="3" fill="url(#pGreenEdu)" />
+
+          <rect x="190" y="180" width="16" height="320" rx="3" fill="url(#pOrangeEdu)" />
+          <rect x="212" y="85" width="16" height="415" rx="3" fill="url(#pRedEdu)" />
+          <rect x="234" y="230" width="16" height="270" rx="3" fill="url(#pBlueEdu)" />
+
+          <rect x="275" y="150" width="16" height="350" rx="3" fill="url(#pGreenEdu)" />
+          <rect x="297" y="105" width="16" height="395" rx="3" fill="url(#pRedEdu)" />
+          <rect x="319" y="260" width="16" height="240" rx="3" fill="url(#pYellowEdu)" />
+
+          <rect x="360" y="200" width="16" height="300" rx="3" fill="url(#pBlueEdu)" />
+          <rect x="382" y="120" width="16" height="380" rx="3" fill="url(#pRedEdu)" />
+          <rect x="404" y="240" width="16" height="260" rx="3" fill="url(#pOrangeEdu)" />
+
+          <rect x="445" y="280" width="16" height="220" rx="3" fill="url(#pGreenEdu)" />
+          <rect x="467" y="140" width="16" height="360" rx="3" fill="url(#pRedEdu)" />
+          <rect x="489" y="190" width="16" height="310" rx="3" fill="url(#pBlueEdu)" />
+
+          <rect x="530" y="220" width="16" height="280" rx="3" fill="url(#pOrangeEdu)" />
+          <rect x="552" y="100" width="16" height="400" rx="3" fill="url(#pRedEdu)" />
+          <rect x="574" y="250" width="16" height="250" rx="3" fill="url(#pGreenEdu)" />
+
+          <rect x="615" y="170" width="16" height="330" rx="3" fill="url(#pBlueEdu)" />
+          <rect x="637" y="90" width="16" height="410" rx="3" fill="url(#pRedEdu)" />
+          <rect x="659" y="230" width="16" height="270" rx="3" fill="url(#pYellowEdu)" />
+
+          <rect x="700" y="260" width="16" height="240" rx="3" fill="url(#pGreenEdu)" />
+          <rect x="722" y="130" width="16" height="370" rx="3" fill="url(#pRedEdu)" />
+          <rect x="744" y="190" width="16" height="310" rx="3" fill="url(#pOrangeEdu)" />
+
+          <rect x="785" y="220" width="16" height="280" rx="3" fill="url(#pBlueEdu)" />
+          <rect x="807" y="115" width="16" height="385" rx="3" fill="url(#pRedEdu)" />
+          <rect x="829" y="250" width="16" height="250" rx="3" fill="url(#pGreenEdu)" />
+
+          <rect x="870" y="210" width="16" height="290" rx="3" fill="url(#pYellowEdu)" />
+          <rect x="892" y="140" width="16" height="360" rx="3" fill="url(#pRedEdu)" />
+          <rect x="914" y="260" width="16" height="240" rx="3" fill="url(#pBlueEdu)" />
+
+          <rect x="955" y="180" width="16" height="320" rx="3" fill="url(#pOrangeEdu)" />
+          <rect x="977" y="95" width="16" height="405" rx="3" fill="url(#pRedEdu)" />
+          <rect x="999" y="230" width="16" height="270" rx="3" fill="url(#pGreenEdu)" />
+
+          <rect x="1040" y="250" width="16" height="250" rx="3" fill="url(#pBlueEdu)" />
+          <rect x="1062" y="125" width="16" height="375" rx="3" fill="url(#pRedEdu)" />
+          <rect x="1084" y="190" width="16" height="310" rx="3" fill="url(#pYellowEdu)" />
+
+          <rect x="1125" y="220" width="16" height="280" rx="3" fill="url(#pOrangeEdu)" />
+          <rect x="1147" y="150" width="16" height="350" rx="3" fill="url(#pRedEdu)" />
+          <rect x="1169" y="270" width="16" height="230" rx="3" fill="url(#pBlueEdu)" />
+        </svg>
+      </div>
+      <div class="section-dots-pattern" aria-hidden="true"></div>
+
+      <div class="section-container">
+        <div class="section-head">
+          <h2>Education</h2>
+        </div>
+
+        <div class="experience-cards">
+          <!-- EDUCATION CARD: Universitas Diponegoro -->
+          <article class="exp-card education-card">
+            <div class="exp-card-inner">
+              <!-- Row 1, Col 1: Role Header Info with Navy Divider -->
+              <div class="exp-header-info">
+                <h3 class="exp-role-title">B.Sc. in Mathematics</h3>
+                <div class="exp-meta-badges">
+                  <span class="exp-badge-pill">Aug 2022 – Jul 2026</span>
+                  <span class="exp-badge-pill">Semarang, Indonesia</span>
+                  <span class="exp-badge-pill exp-badge-gold">GPA 3.57 / 4.00</span>
+                </div>
+                <p class="exp-company-name">Universitas Diponegoro</p>
+                <div class="edu-logo-wrap">
+                  <img src="1200px-UNDIPOfficial.png" alt="Logo Universitas Diponegoro" class="edu-logo-img">
+                </div>
+              </div>
+
+              <!-- Row 2, Col 1: Bullets & Academic Pillars -->
+              <div class="exp-details-col">
+                <div class="exp-bullets-group">
+                  <div class="exp-block">
+                    <span class="exp-pill-heading">Undergraduate Thesis (Skripsi)</span>
+                    <div class="exp-box-content">
+                      <ul>
+                        <li><strong>Modeled stock price movements with a Stochastic Volatility Model</strong> on 240+ daily price observations (1 year of historical data), and validated prediction reliability with two validation methods.</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="exp-block">
+                    <span class="exp-pill-heading">Accredited Publication</span>
+                    <div class="exp-box-content">
+                      <ul>
+                        <li><strong>Published in Contemporary Mathematics and Applications (ConMathA) (2025):</strong> <em>Forecasting the Consumer Price Index in Banyumas Regency Using Double Exponential Smoothing with Proportional Integral Derivative Controller</em>.</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="exp-block">
+                    <span class="exp-pill-heading">Community Service (KKN Kemujan)</span>
+                    <div class="exp-box-content">
+                      <ul>
+                        <li><strong>Marginal analysis to improve the efficiency of seaweed farming in Kemujan Village, Karimunjawa (2025)</strong>, producing cost-efficiency strategies and optimal harvest recommendations for local farmers.</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="exp-block">
+                    <span class="exp-pill-heading">Award &amp; Scholarship</span>
+                    <div class="exp-box-content">
+                      <ul>
+                        <li><strong>Bank Indonesia Scholarship (GenBI) recipient (2025 – 2026)</strong> — prestigious national merit scholarship granted by Bank Indonesia for academic excellence and leadership contributions.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="exp-tools-container">
+                  <span class="exp-pill-heading">Specialization Areas</span>
+                  <div class="exp-tools-tags">
+                    <span>• Stochastic Volatility Modeling</span>
+                    <span>• Time-Series Forecasting</span>
+                    <span>• Applied Statistical Methods</span>
+                    <span>• Mathematical Optimization</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right Column: Visual Showcase -->
+              <div class="exp-visual-col">
+                <div class="exp-showcase-box">
+                  <div class="exp-showcase-topbar">Academic Deliverables &amp; Honors</div>
+                  <div class="exp-showcase-layout-vinix">
+                    <!-- Top Featured: Thesis Model Simulation -->
+                    <div class="exp-showcase-item exp-item-featured">
+                      <div class="exp-showcase-tab">Skripsi / Stochastic Volatility Model</div>
+                      <div class="exp-showcase-media exp-media-featured">
+                        <a href="HESTON KOU.png" target="_blank" rel="noopener noreferrer"
+                          title="Click to view full image: Heston-Kou Stochastic Volatility Stock Modeling Simulation">
+                          <img src="HESTON KOU.png" alt="Stochastic Volatility Simulation" loading="lazy">
+                        </a>
+                      </div>
+                    </div>
+
+                    <!-- Bottom Row: 2 Items Side-by-Side -->
+                    <div class="exp-showcase-subgrid">
+                      <div class="exp-showcase-item">
+                        <div class="exp-showcase-tab">ConMathA Journal</div>
+                        <div class="exp-showcase-media exp-media-half">
+                          <a href="journal_conmatha_preview.png" target="_blank" rel="noopener noreferrer"
+                            title="Click to view full image: ConMathA Journal Publication Preview">
+                            <img src="journal_conmatha_preview.png" alt="ConMathA Publication" loading="lazy">
+                          </a>
+                        </div>
+                      </div>
+
+                      <div class="exp-showcase-item">
+                        <div class="exp-showcase-tab">Bank Indonesia (GenBI)</div>
+                        <div class="exp-showcase-media exp-media-half">
+                          <a href="foto genbi/aktivitas genbi 2.jpeg" target="_blank" rel="noopener noreferrer"
+                            title="Click to view full image: Pembinaan Penerima Beasiswa Bank Indonesia">
+                            <img src="foto genbi/aktivitas genbi 2.jpeg" alt="Beasiswa Bank Indonesia" loading="lazy">
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
     </section>
@@ -1100,9 +1324,9 @@
               <div class="activity-pill-heading">Key Contribution</div>
               <div class="activity-box-content">
                 <ul>
-                  <li><strong>Designed &amp; executed 8 development programs</strong> to identify and foster the non-academic talents of 150 scholarship awardees.</li>
-                  <li><strong>Organized routine sports &amp; recreational initiatives</strong> open to all 150 awardees, engaging 30+ regular participants per session to foster teamwork.</li>
-                  <li><strong>Managed operational logistics for flagship events</strong>, including First Gathering and Upgrading, accommodating 150 attendees and 8 supervising lecturers.</li>
+                  <li><strong>Designed and ran 8 development programs</strong> to identify and nurture the non-academic talents of 150 scholarship recipients.</li>
+                  <li><strong>Organized regular sports and recreation activities</strong> open to all 150 scholarship recipients, with 30+ regular participants per session to build teamwork and solidarity.</li>
+                  <li><strong>Managed operational logistics for flagship events</strong>, including First Gathering and Upgrading, with 150 participants and 8 faculty mentors.</li>
                 </ul>
               </div>
             </div>
@@ -1165,9 +1389,9 @@
               <div class="activity-pill-heading">Key Contribution</div>
               <div class="activity-box-content">
                 <ul>
-                  <li><strong>Directed planning &amp; execution of "Pencerdasan Internal"</strong> (Internal Enlightenment) as Project Officer, securing 100% attendance from 45 association members.</li>
-                  <li><strong>Led mentor coordination for SPEKTA MATH 2024</strong>, structuring learning modules and directing facilitators to guide 180 freshmen students.</li>
-                  <li><strong>Awarded Top Expert Staff in Q3 2024</strong> for modernizing conventional program workflows and successfully delivering two core student development initiatives.</li>
+                  <li><strong>Led the planning and execution of the "Internal Enlightenment" program</strong> as Project Officer, with 100% attendance from 45 association members.</li>
+                  <li><strong>Led mentor coordination for SPEKTA MATH 2024</strong>, preparing learning modules and guiding facilitators to mentor 180 new students.</li>
+                  <li><strong>Received the Best Expert Staff award in Q3 2024</strong> for modernizing program workflows and completing two student development initiatives.</li>
                 </ul>
               </div>
             </div>
@@ -1230,9 +1454,9 @@
               <div class="activity-pill-heading">Key Contribution</div>
               <div class="activity-box-content">
                 <ul>
-                  <li><strong>Allocated logistical resources and technical equipment</strong> for a national competition engaging <strong>980 participants</strong> across elementary, middle, and high school levels.</li>
-                  <li><strong>Managed spatial setup &amp; crowd mobilization</strong> across 10 examination rooms, a main auditorium, vendor areas, and public facilities on strict operational schedules.</li>
-                  <li><strong>Monitored 100+ inventory assets</strong> and resolved on-site logistical issues in real time throughout event days.</li>
+                  <li><strong>Allocated logistics resources and technical equipment</strong> for a national-level competition with 980 participants from elementary, junior high, and senior high school levels.</li>
+                  <li><strong>Arranged venue layout and crowd flow</strong> across 10 exam rooms, a main auditorium, vendor areas, and public facilities under a strict operational schedule.</li>
+                  <li><strong>Tracked 100+ inventory assets</strong> and resolved on-site logistical issues in real time during the event.</li>
                 </ul>
               </div>
             </div>
@@ -1349,9 +1573,57 @@
         </div>
         <div class="activity-cards">
 
-          <!-- CARD 1: BNSP Professional Competency Certification -->
+          <!-- CARD 1: DQLab Data Analyst Bootcamp -->
           <article class="activity-card activity-card-highlight">
-            <h3 class="activity-role-title">Competency Certification: Computer Operation</h3>
+            <h3 class="activity-role-title">Bootcamp: Data Analyst with SQL and Python on Google Platform (Batch 26)</h3>
+
+            <div class="activity-meta-banner">
+              <div class="activity-meta-left">
+                <div class="activity-meta-pills">
+                  <span class="activity-meta-date">10/2026 - Present</span>
+                  <span class="activity-meta-loc">Online / Indonesia</span>
+                </div>
+                <span class="activity-meta-org">DQLab — Liveclass Journey (Batch 26)</span>
+              </div>
+              <div class="activity-org-logo-wrap" title="DQLab Liveclass Journey">
+                <img src="dqlab_bootcamp_banner.png" alt="Logo DQLab" class="activity-org-logo" style="object-fit: cover;">
+              </div>
+            </div>
+
+            <div class="activity-section-block">
+              <div class="activity-pill-heading">Key Contribution</div>
+              <div class="activity-box-content">
+                <ul>
+                  <li><strong>In progress: SQL fundamentals with Google BigQuery and Python for data analysis</strong>, developing scalable queries and analytic pipelines.</li>
+                  <li><strong>Completed intensive 65-hour practical training</strong> across 17 live sessions led by industry Lead Data Scientists from Telco and Astra.</li>
+                  <li><strong>Mastered relational SQL data querying and Python analysis</strong> within Google Platform environment for end-to-end data workflows.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="activity-section-block">
+              <div class="activity-pill-heading">Key Skill</div>
+              <div class="activity-skills-pills">
+                <span class="activity-skill-pill">Google BigQuery</span>
+                <span class="activity-skill-pill">SQL Querying</span>
+                <span class="activity-skill-pill">Python Analytics</span>
+                <span class="activity-skill-pill">Google Platform</span>
+              </div>
+            </div>
+
+            <div class="activity-gallery-strip">
+              <a href="dqlab_bootcamp_banner.png" class="activity-gallery-item preview-media"
+                title="Bootcamp Data Analyst with SQL &amp; Python in Google Platform Batch 26 — DQLab"
+                style="height: 125px; display: block; border-radius: 6px; overflow: hidden; border: 1px solid rgba(255,255,255,0.18);">
+                <img src="dqlab_bootcamp_banner.png" alt="DQLab Liveclass Journey Banner"
+                  style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+              </a>
+            </div>
+          </article>
+
+          <!-- CARD 2: BNSP Professional Competency Certification -->
+          <article class="activity-card activity-card-highlight">
+            <h3 class="activity-role-title">Competency Certification: Computer Operation (Website Content Management)</h3>
 
             <div class="activity-meta-banner">
               <div class="activity-meta-left">
@@ -1359,7 +1631,7 @@
                   <span class="activity-meta-date">10/2025 - 10/2028</span>
                   <span class="activity-meta-loc">National / Indonesia</span>
                 </div>
-                <span class="activity-meta-org">BNSP RI — No. 63122 3514.01 0000342 2025</span>
+                <span class="activity-meta-org">National Professional Certification Agency (BNSP) — No. 63122 3514.01 0000342 2025</span>
               </div>
               <div class="activity-org-logo-wrap" title="Badan Nasional Sertifikasi Profesi (BNSP RI)">
                 <img src="bnsp/logo-bnsp.png" alt="Logo BNSP" class="activity-org-logo">
@@ -1371,8 +1643,8 @@
               <div class="activity-box-content">
                 <ul>
                   <li><strong>Certified in website content management</strong> under the Computer Operation competency field.</li>
-                  <li><strong>Assessed against Indonesian National Work Competency Standards (SKKNI)</strong>, validating spreadsheet calculation, database manipulation, and digital content governance.</li>
-                  <li><strong>Demonstrated verified proficiency in office computing workflows</strong> and automated data processing integrity.</li>
+                  <li><strong>Assessed against the Indonesian National Work Competency Standard (SKKNI)</strong>, valid for 3 years.</li>
+                  <li><strong>Demonstrated verified proficiency in office computing workflows</strong>, spreadsheet calculation, and automated data processing integrity.</li>
                 </ul>
               </div>
             </div>
@@ -1383,6 +1655,7 @@
                 <span class="activity-skill-pill">Data Processing &amp; Integrity</span>
                 <span class="activity-skill-pill">Software Operations</span>
                 <span class="activity-skill-pill">Spreadsheet Automation</span>
+                <span class="activity-skill-pill">SKKNI Standards</span>
               </div>
             </div>
 
@@ -1407,54 +1680,6 @@
                   <img src="bnsp/bnsp-sertifikat.png" alt="Sertifikat Kompetensi BNSP RI" loading="lazy">
                 </a>
               </div>
-            </div>
-          </article>
-
-          <!-- CARD 2: DQLab Data Analyst Bootcamp -->
-          <article class="activity-card activity-card-highlight">
-            <h3 class="activity-role-title">Bootcamp: Data Analyst with SQL and Python</h3>
-
-            <div class="activity-meta-banner">
-              <div class="activity-meta-left">
-                <div class="activity-meta-pills">
-                  <span class="activity-meta-date">10/2024 - 11/2024</span>
-                  <span class="activity-meta-loc">Online / Indonesia</span>
-                </div>
-                <span class="activity-meta-org">DQLab — Liveclass Journey (Batch 26)</span>
-              </div>
-              <div class="activity-org-logo-wrap" title="DQLab Liveclass Journey">
-                <img src="dqlab_bootcamp_banner.png" alt="Logo DQLab" class="activity-org-logo" style="object-fit: cover;">
-              </div>
-            </div>
-
-            <div class="activity-section-block">
-              <div class="activity-pill-heading">Key Contribution</div>
-              <div class="activity-box-content">
-                <ul>
-                  <li><strong>Completed intensive 65-hour practical training</strong> across 17 live sessions led by industry Lead Data Scientists from Telco and Astra.</li>
-                  <li><strong>Mastered relational SQL data querying and Python analysis</strong> within Google Platform environment for end-to-end data workflows.</li>
-                  <li><strong>Engineered business case analytics portfolios</strong>, conducting data wrangling, exploratory analysis, and stakeholder storytelling.</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="activity-section-block">
-              <div class="activity-pill-heading">Key Skill</div>
-              <div class="activity-skills-pills">
-                <span class="activity-skill-pill">SQL Querying</span>
-                <span class="activity-skill-pill">Python Data Analysis</span>
-                <span class="activity-skill-pill">Google Platform</span>
-                <span class="activity-skill-pill">Business Storytelling</span>
-              </div>
-            </div>
-
-            <div class="activity-gallery-strip">
-              <a href="dqlab_bootcamp_banner.png" class="activity-gallery-item preview-media"
-                title="Bootcamp Data Analyst with SQL &amp; Python in Google Platform Batch 26 — DQLab"
-                style="height: 125px; display: block; border-radius: 6px; overflow: hidden; border: 1px solid rgba(255,255,255,0.18);">
-                <img src="dqlab_bootcamp_banner.png" alt="DQLab Liveclass Journey Banner"
-                  style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
-              </a>
             </div>
           </article>
 
@@ -1655,6 +1880,14 @@
                     </svg>
                     <span class="comp-tool-label">MySQL</span>
                   </div>
+                  <!-- Google BigQuery -->
+                  <div class="comp-tool-item" title="Google BigQuery">
+                    <svg class="comp-logo-img" viewBox="0 0 24 24" width="26" height="26" aria-label="Google BigQuery">
+                      <circle cx="12" cy="12" r="11" fill="#1A73E8" />
+                      <path fill="#FFFFFF" d="M12 5C8.13 5 5 8.13 5 12c0 2.9 1.55 5.43 3.86 6.81l1.1-1.9A5.85 5.85 0 0 1 7.2 12c0-2.65 2.15-4.8 4.8-4.8s4.8 2.15 4.8 4.8c0 1.9-.99 3.56-2.48 4.35l1.09 1.91A7.95 7.95 0 0 0 19 12c0-3.87-3.13-7-7-7zm-1 5v4h2v-4h-2zm4 7.5l-1.5-2.5h-3l-1.5 2.5h6z"/>
+                    </svg>
+                    <span class="comp-tool-label">BigQuery</span>
+                  </div>
                   <!-- SPSS -->
                   <div class="comp-tool-item" title="IBM SPSS Statistics">
                     <svg class="comp-logo-img" viewBox="0 0 36 36" width="26" height="26" aria-label="IBM SPSS">
@@ -1666,23 +1899,10 @@
                 </div>
               </div>
 
-              <!-- Microsoft Office -->
+              <!-- Productivity & Spreadsheet -->
               <div class="comp-tool-group">
-                <h4 class="comp-tool-title">Microsoft Office</h4>
+                <h4 class="comp-tool-title">Productivity &amp; Spreadsheets</h4>
                 <div class="comp-tool-logos">
-                  <!-- Word -->
-                  <div class="comp-tool-item" title="Microsoft Word">
-                    <svg class="comp-logo-img" viewBox="0 0 36 36" width="26" height="26" aria-label="Microsoft Word">
-                      <rect x="2" y="5" width="22" height="26" rx="3" fill="#185ABD" />
-                      <rect x="12" y="3" width="22" height="30" rx="3" fill="#2B7CD3" opacity="0.9" />
-                      <path d="M15 10L18.5 24H21.5L24 14.5L26.5 24H29.5L33 10H30L28 20L25.5 10H22.5L20 20L18 10H15Z"
-                        fill="#FFFFFF" />
-                      <rect x="2" y="7" width="18" height="22" rx="3" fill="#103F91" />
-                      <text x="11" y="24" font-family="'Segoe UI', Arial, sans-serif" font-weight="800" font-size="16"
-                        fill="#FFFFFF" text-anchor="middle">W</text>
-                    </svg>
-                    <span class="comp-tool-label">Word</span>
-                  </div>
                   <!-- Excel -->
                   <div class="comp-tool-item" title="Microsoft Excel">
                     <svg class="comp-logo-img" viewBox="0 0 36 36" width="26" height="26" aria-label="Microsoft Excel">
@@ -1697,6 +1917,30 @@
                         fill="#FFFFFF" text-anchor="middle">X</text>
                     </svg>
                     <span class="comp-tool-label">Excel</span>
+                  </div>
+                  <!-- Google Sheets -->
+                  <div class="comp-tool-item" title="Google Sheets">
+                    <svg class="comp-logo-img" viewBox="0 0 36 36" width="26" height="26" aria-label="Google Sheets">
+                      <rect x="4" y="3" width="28" height="30" rx="4" fill="#0F9D58" />
+                      <rect x="8" y="8" width="20" height="20" rx="2" fill="#FFFFFF" fill-opacity="0.15" />
+                      <line x1="8" y1="14" x2="28" y2="14" stroke="#FFFFFF" stroke-width="1.6" />
+                      <line x1="8" y1="20" x2="28" y2="20" stroke="#FFFFFF" stroke-width="1.6" />
+                      <line x1="17" y1="8" x2="17" y2="28" stroke="#FFFFFF" stroke-width="1.6" />
+                    </svg>
+                    <span class="comp-tool-label">Sheets</span>
+                  </div>
+                  <!-- Word -->
+                  <div class="comp-tool-item" title="Microsoft Word">
+                    <svg class="comp-logo-img" viewBox="0 0 36 36" width="26" height="26" aria-label="Microsoft Word">
+                      <rect x="2" y="5" width="22" height="26" rx="3" fill="#185ABD" />
+                      <rect x="12" y="3" width="22" height="30" rx="3" fill="#2B7CD3" opacity="0.9" />
+                      <path d="M15 10L18.5 24H21.5L24 14.5L26.5 24H29.5L33 10H30L28 20L25.5 10H22.5L20 20L18 10H15Z"
+                        fill="#FFFFFF" />
+                      <rect x="2" y="7" width="18" height="22" rx="3" fill="#103F91" />
+                      <text x="11" y="24" font-family="'Segoe UI', Arial, sans-serif" font-weight="800" font-size="16"
+                        fill="#FFFFFF" text-anchor="middle">W</text>
+                    </svg>
+                    <span class="comp-tool-label">Word</span>
                   </div>
                   <!-- PowerPoint -->
                   <div class="comp-tool-item" title="Microsoft PowerPoint">
@@ -1717,7 +1961,7 @@
 
               <!-- Data Visualization -->
               <div class="comp-tool-group">
-                <h4 class="comp-tool-title">Data Visualization</h4>
+                <h4 class="comp-tool-title">Data Visualization &amp; BI</h4>
                 <div class="comp-tool-logos">
                   <!-- Power BI -->
                   <div class="comp-tool-item" title="Power BI">
@@ -1817,13 +2061,14 @@
                 <span class="comp-badge comp-badge-yellow">Exploratory Data Analysis (EDA)</span>
                 <span class="comp-badge comp-badge-red">Statistical Testing (Pearson, t-test)</span>
                 <span class="comp-badge comp-badge-yellow">Data Cleaning &amp; Validation</span>
-                <span class="comp-badge comp-badge-red">Outlier Treatment (5% Winsorizing)</span>
+                <span class="comp-badge comp-badge-red">Outlier Handling (5% Winsorizing)</span>
                 <span class="comp-badge comp-badge-yellow">K-Means Clustering</span>
                 <span class="comp-badge comp-badge-red">Regression Analysis</span>
                 <span class="comp-badge comp-badge-yellow">BI &amp; KPI Dashboards</span>
                 <span class="comp-badge comp-badge-red">SQL Schema Design &amp; Queries</span>
                 <span class="comp-badge comp-badge-yellow">Advanced Excel &amp; Google Sheets</span>
-                <span class="comp-badge comp-badge-red">Stochastic Volatility Modeling</span>
+                <span class="comp-badge comp-badge-red">Scikit-Learn &amp; SciPy</span>
+                <span class="comp-badge comp-badge-yellow">Stochastic Volatility Modeling</span>
               </div>
             </div>
 
